@@ -1,6 +1,6 @@
 package org.usfirst.frc.team3939.robot;
 
-//test
+//test 
 
 import edu.wpi.first.wpilibj.RobotDrive; 
 import edu.wpi.first.wpilibj.SampleRobot;
@@ -161,15 +161,15 @@ public class Robot extends SampleRobot {
 	public void operatorControl() {
 		myRobot.setSafetyEnabled(true);  
 		while (isOperatorControl() && isEnabled()) {
-			myRobot.arcadeDrive(-stick.getY(), stick.getX());	
+			myRobot.arcadeDrive(-stick.getY(), (-stick.getZ()));	
 			
 			Timer.delay(0.005); // wait for a motor update time
 		}
 	}
 
 	/**
-	 * Runs during test mode
-	 */
+	 * Runs during test mode 
+	 */ 
 	@Override
 	public void test() {
 	}
